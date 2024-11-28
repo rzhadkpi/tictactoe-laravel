@@ -50,7 +50,7 @@ class RoomController extends Controller
         if (!$this->roomService->updateBoard($room, session('side'), $data['x'], $data['y'])) {
             return response()->json([
                 'success' => false,
-                'message' => 'It is not your turn!',
+                'message' => 'Зараз не ваш хід!',
             ]);
         }
 

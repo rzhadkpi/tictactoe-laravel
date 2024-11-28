@@ -199,7 +199,7 @@
                     });
 
                     if (!response.ok) {
-                        throw new Error('Ошибка при обновлении игры.');
+                        throw new Error('Помилка при оновленні гри.');
                     }
 
                     document.getElementById('refresh-game').classList.add('d-none');
